@@ -31,10 +31,10 @@ export default function About() {
 					<Text variant="muted" size="xs" className="mb-8">Last updated: December 30, 2024</Text>
                 <StackVertical gap="md">
                     <Text>
-                            Hi! I am Sumit. I am a SWE currently based in Tokyo, and I have a big passion for AI.
+                            Hi! I am Soham.
                     </Text>
                     <Text>
-                    I studied in Japan as a business undergraduate for 4 years and received a degree in it, but I was truly never interested in anything related to business. Well, it's a long story about why I ended up at the university I ended up in and pursued the kind of degree I pursued despite having next to no interest in any of that, but life does really work in fascinating ways. I must say that it hasn't turned out too bad for myself.
+                    I studied in Goa as a business undergraduate for 4 years and received a degree in it, but I was truly never interested in anything related to business. Well, it's a long story about why I ended up at the university I ended up in and pursued the kind of degree I pursued despite having next to no interest in any of that, but life does really work in fascinating ways. I must say that it hasn't turned out too bad for myself.
                     </Text>
                     <Text>
                         To be very brief, I was always into math and was always fascinated by the engineering behind a lot of things I would see in real life. Bridges have always been one of the most splendid pieces of architecture to me; these towering figures effortlessly handle countless vehicles weighing tons, and humans somehow learned how to do that? It's incredible. I tell this to my friends every time we go on some trips here in Japan (god bless this country is full of these) and they try to stay amused for my sake, but I can see it that their thoughts lie elsewhere. Maybe I'm just a nerd. But I think bridges are cool. So are rockets. Humans built all that.
