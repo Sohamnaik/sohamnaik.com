@@ -33,7 +33,7 @@ export function HeroSection() {
                         }}
                         className={cn("text-2xl sm:text-3xl md:text-4xl", monoFont.className)}
                     >
-                        👾
+                        🧬
                     </motion.div>
 
                     {/* Name and title with staggered fade-in */}
@@ -44,7 +44,7 @@ export function HeroSection() {
                         className="relative"
                     >
                         <TextHeading as="h1" className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-                            sumit.ml
+                            Soham Naik
                         </TextHeading>
                     </motion.div>
 
@@ -55,7 +55,7 @@ export function HeroSection() {
                         transition={{ delay: 0.4 }}
                     >
                         <Text >
-                            Hi! I am Sumit.
+                            Hi! I am Soham.
                         </Text>
 
                         <Ruler color='colorless' marginTop='sm' marginBottom='none'/>
@@ -66,7 +66,7 @@ export function HeroSection() {
                             transition={{ delay: 0.5 }}
                         >
                             <Text>
-                                I'm a swe based in Tokyo. I love coffee, machine learning, math, and among others. Glad to have you here! Feel free to look around :)
+                                I'm a student from Goa. I love coffee, machine learning, math, and among others. Glad to have you here! Feel free to look around :)
                             </Text>
                             <Ruler color='colorless' marginTop='sm' marginBottom='none'/>
                         </motion.div>
