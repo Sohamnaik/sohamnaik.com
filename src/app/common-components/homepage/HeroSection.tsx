@@ -116,7 +116,7 @@ export function HeroSection() {
                     <Image
                         className="object-cover"
                         fill
-                        src="/gion-town.png" 
+                        src="/soham.png" 
                         alt="Gion Town"
                         priority
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
