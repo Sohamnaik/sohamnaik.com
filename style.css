@@ -1,324 +1,387 @@
-/* Reset and base styles */
-* {
+/* Reset */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: #ffffff;
-    color: #000000;
+/* Base */
+html {
+    font-size: 16px;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 600px;
-    text-align: center;
-    width: 100%;
-    flex: 1;
-}
-
-/* Typography */
-h1 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: #ffffff;
     color: #000000;
+    line-height: 1.7;
+    padding: 3rem 1.5rem;
 }
 
-/* Navigation menu */
+/* Container */
+.container {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Navigation */
 .menu {
+    margin-bottom: 3rem;
+}
+
+.menu a {
+    color: #878585;
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-right: 1.25rem;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+/* Hero */
+.hero {
     margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #888;
+    letter-spacing: 0.03em;
 }
 
 /* Profile photo */
 .profile-photo-container {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 3rem;
 }
 
-.profile-photo,
-.profile-placeholder {
-    width: 150px;
-    height: 150px;
+.profile-photo {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     display: block;
 }
 
 .profile-placeholder {
-    display: flex;
+    width: 120px;
+    height: 120px;
+    display: none;
     align-items: center;
     justify-content: center;
-    background-color: #f8f8f8;
-    border: 1px solid #e0e0e0;
+    background-color: #f4f4f4;
 }
 
-.menu a {
-    color: #666666;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.menu a:hover {
-    color: #000000;
-    text-decoration: underline;
-}
-
-/* About section */
-.about-section {
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto 2rem auto;
-}
-
-.about-section h2 {
-    font-size: 1.2rem;
+/* Section label */
+.section-label {
+    display: block;
+    font-size: 0.7rem;
     font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: #000000;
-}
-
-.about-section ul {
-    list-style: none;
-    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #878585;
     margin-bottom: 1rem;
 }
 
-.about-section li {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-    color: #000000;
-    position: relative;
-    padding-left: 1.2rem;
-    line-height: 1.5;
+/* Generic section spacing */
+.section {
+    margin-bottom: 3rem;
 }
 
-.about-section li::before {
-    content: '•';
+/* About list */
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 0.95rem;
+    color: #333;
+    padding-left: 1.1rem;
+    position: relative;
+    margin-bottom: 0.45rem;
+    line-height: 1.55;
+}
+
+.about-list li::before {
+    content: '\00B7';
     position: absolute;
     left: 0;
-    color: #000000;
+    color: #878585;
 }
 
-/* Description paragraphs */
-.description {
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto 2rem auto;
-}
-
-.description p {
+/* Story */
+.story p {
     font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #000000;
-    line-height: 1.5;
+    color: #111;
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
 }
 
-.description em {
-    font-style: italic;
+.story p:last-child {
+    margin-bottom: 0;
 }
 
-/* Writings section */
-.writings-section {
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.writings-section h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-bottom: 0.5rem;
-    color: #000000;
-}
-
-.writing-links {
+/* Interests */
+.interests-list {
     list-style: none;
     padding: 0;
 }
 
-.writing-links li {
-    margin-bottom: 0.3rem;
+.interests-list li {
+    font-size: 0.9rem;
+    color: #444;
+    padding-left: 1.1rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
 }
 
-.writing-links a {
-    color: #666666;
+.interests-list li::before {
+    content: '\00B7';
+    position: absolute;
+    left: 0;
+    color: #878585;
+}
+
+/* Featured essay */
+.featured {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.featured-title {
+    font-size: 1.15rem;
+    font-weight: normal;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+    color: #000;
+}
+
+.featured-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 1.1rem;
+}
+
+.featured-link {
+    font-size: 0.875rem;
+    color: #000;
     text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
 }
 
-.writing-links a:hover {
-    color: #000000;
+.featured-link:hover {
+    color: #555;
+    border-bottom-color: #555;
+}
+
+/* Featured publication (mirrors .featured) */
+.featured-publication {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Writings page list */
+.writings-intro {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.writings-list {
+    margin-top: 0;
+}
+
+.writing-item {
+    margin-bottom: 2.25rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.writing-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.writing-item-title {
+    font-size: 1.05rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 0.2rem;
+}
+
+.writing-item-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.writing-item-title a:hover {
     text-decoration: underline;
+}
+
+.writing-item-meta {
+    font-size: 0.78rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.writing-item-description {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Post pages */
+.back-link {
+    display: inline-block;
+    font-size: 0.83rem;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+}
+
+.back-link:hover {
+    color: #000;
+}
+
+.post-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.post-title {
+    font-size: 1.75rem;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 0.6rem;
+    color: #000;
+}
+
+.post-meta {
+    font-size: 0.78rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.post-content p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #111;
+    margin-bottom: 1.4rem;
+}
+
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+.post-content h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 2.25rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
 }
 
 /* Footer */
 .footer {
-    margin-top: 3rem;
-    padding: 1.5rem 1rem;
-    text-align: center;
+    max-width: 580px;
+    margin: 3rem auto 0;
+    padding: 2rem 1.5rem 0;
     border-top: 1px solid #f0f0f0;
-    width: 100%;
+}
+
+.footer-links {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    font-size: 0.83rem;
+    color: #888;
+    text-decoration: none;
+    margin-right: 1.1rem;
+}
+
+.footer-links a:hover {
+    color: #000;
 }
 
 .footer p {
-    font-size: 0.9rem;
-    color: #666666;
-    margin: 0;
+    font-size: 0.78rem;
+    color: #ccc;
 }
 
-/* Responsive design */
-/* Mobile devices (up to 480px) */
+/* Responsive — tablet */
+@media (max-width: 768px) {
+    body {
+        padding: 2.25rem 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .post-title {
+        font-size: 1.55rem;
+    }
+}
+
+/* Responsive — mobile */
 @media (max-width: 480px) {
     body {
-        padding: 1rem 0.75rem;
+        padding: 1.75rem 1rem;
     }
-    
-    .container {
-        max-width: 100%;
-        padding: 0 0.5rem;
-    }
-    
+
     h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.75rem;
     }
-    
+
     .menu {
+        margin-bottom: 2rem;
+    }
+
+    .hero {
         margin-bottom: 1.5rem;
     }
-    
-    .menu a {
-        margin: 0 0.3rem;
-        font-size: 0.85rem;
-    }
-    
-    .profile-photo,
-    .profile-placeholder {
-        width: 120px;
-        height: 120px;
-    }
-    
+
     .profile-photo-container {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.25rem;
     }
-    
-    .about-section,
-    .description,
-    .writings-section {
-        max-width: 100%;
-        margin-bottom: 1.5rem;
+
+    .section {
+        margin-bottom: 2.25rem;
     }
-    
-    .about-section h2,
-    .writings-section h2 {
-        font-size: 1.1rem;
+
+    .featured {
+        padding-top: 2rem;
+        margin-bottom: 2.25rem;
     }
-    
-    .description p,
-    .about-section li,
-    .writing-links a {
-        font-size: 0.9rem;
-        line-height: 1.4;
+
+    .post-title {
+        font-size: 1.4rem;
     }
-    
+
     .footer {
-        margin-top: 2rem;
-        padding: 1rem;
-    }
-    
-    .footer p {
-        font-size: 0.8rem;
-    }
-}
-
-/* Tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        padding: 1.5rem 1rem;
-    }
-    
-    .container {
-        max-width: 90%;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    .menu a {
-        margin: 0 0.6rem;
-        font-size: 0.95rem;
-    }
-    
-    .profile-photo,
-    .profile-placeholder {
-        width: 140px;
-        height: 140px;
-    }
-    
-    .about-section,
-    .description,
-    .writings-section {
-        max-width: 450px;
-    }
-    
-    .description p,
-    .about-section li,
-    .writing-links a {
-        font-size: 0.95rem;
-    }
-}
-
-/* Small laptops and large tablets (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        max-width: 550px;
-    }
-    
-    h1 {
-        font-size: 2.3rem;
-    }
-    
-    .about-section,
-    .description,
-    .writings-section {
-        max-width: 480px;
-    }
-}
-
-/* Large screens (1025px and up) */
-@media (min-width: 1025px) {
-    body {
-        padding: 2.5rem 1rem;
-    }
-    
-    .container {
-        max-width: 600px;
-    }
-    
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    .about-section,
-    .description,
-    .writings-section {
-        max-width: 500px;
+        padding: 1.5rem 0 0;
     }
 }

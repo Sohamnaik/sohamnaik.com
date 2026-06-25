@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham</title>
+    <title>Soham Naik</title>
+    <meta name="description" content="Soham Naik — computational biologist, researcher, and builder from Goa, India.">
     <link rel="icon" href="main_character.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Hi, I'm Soham</h1>
-        
+
         <nav class="menu">
-            <a href="index.html">home</a>
-            <a href="writings.html">writings</a>
+            <a href="index.html">Home</a>
+            <a href="writings.html">Writings</a>
         </nav>
-        
+
+        <div class="hero">
+            <h1>Hi, I'm Soham</h1>
+            <p class="subtitle">Computational Biology &nbsp;&middot;&nbsp; Biotechnology &nbsp;&middot;&nbsp; Startups</p>
+        </div>
+
         <div class="profile-photo-container">
-            <img src="assets/newpfp.jpg" alt="Soham" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="profile-placeholder" style="display: none;">
-                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="150" height="150" fill="#f0f0f0"/>
-                    <circle cx="75" cy="60" r="20" fill="#ccc"/>
-                    <path d="M40 120c0-19.3 15.7-35 35-35s35 15.7 35 35" fill="#ccc"/>
+              <a
+        href="https://www.linkedin.com/in/therealsohamnaik/"
+        target="_blank"
+        rel="noopener noreferrer" 
+        aria-label="Visit Soham Naik's LinkedIn profile"
+    >
+            <img
+                src="assets/newpfp.jpg"
+                alt="Soham Naik"
+                class="profile-photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="profile-placeholder">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="120" height="120" fill="#f0f0f0"/>
+                    <circle cx="60" cy="48" r="18" fill="#d0d0d0"/>
+                    <path d="M24 100c0-19.9 16.1-36 36-36s36 16.1 36 36" fill="#d0d0d0"/>
                 </svg>
             </div>
+        </a>
         </div>
-        
-        <div class="about-section">
-            <h2>A bit about me :</h2>
-            <ul>
-                <li>Graduated with an M.Sc in Marine Biotechnology from Goa University (June 2025)</li>
-                <li>Currently job-hunting - because I’m broke, and I want to be financially independent on my own terms</li>
+
+        <section class="section">
+            <span class="section-label">A Few Things About Me</span>
+            <ul class="about-list">
+                <li>Born and raised in Goa, India</li>
+                <li>M.Sc. in Marine Biotechnology, Goa University</li>
+                <li>Former Project Associate - I at CSIR–National Institute of Oceanography, Goa, India</li>
+                <li>Interested in computational biology, healthcare, and entrepreneurship</li>
+                <li>Currently exploring what comes next</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="description">
-            <p>
-                I’m Soham, born and raised in Goa, India.
-                
-                I love computers, bioinformatics, cooking, anime, books, music, and messing with electronics.
-            </p>
+        <section class="section">
+            <span class="section-label">My Story</span>
+            <div class="story">
+                <p>I grew up in hospital waiting rooms before I ever stepped into a research lab.</p>
+                <p>Those early experiences sparked a curiosity about illness, diagnostics, and the systems that keep us healthy. Over time, that curiosity evolved into a habit of building things, from science fair projects and electronics prototypes to bioinformatics pipelines and research tools.</p>
+                <p>Today, my work sits at the intersection of biology and computation. I've worked on marine metagenomics, microbial genome reconstruction, structural bioinformatics, and intrinsically disordered proteins. What interests me most is understanding complex systems and translating that understanding into something useful.</p>
+            </div>
+        </section>
 
-            <p>
-                Right now, my life’s a work in progress.
-                I don’t have it figured out, not even close.
-                But that’s okay. I’m not waiting for clarity to start moving.
-                I’m trying to build habits, stay disciplined, and show up even on the days I don’t feel like it.
-                I’m not chasing perfect. I’m chasing momentum.
-            </p>
+        <section class="section">
+            <span class="section-label">I'm particularly interested in</span>
+            <ul class="interests-list">
+                <li>PhD positions in computational biology, bioinformatics, or healthcare technologies</li>
+                <li>Research, innovation and entrepreneurship fellowships</li>
+                <li>Collaborations at the intersection of biology, computation, and healthcare</li>
+            </ul>
+        </section>
 
-            <p>
-                This site is my digital garage, part journal, part lab, part therapy.
-                It’s messy, inconsistent, and real. Like life.
-                But between the ideas and the effort, I’m building something.
-                Not to impress. Just to be honest. Just to keep going.
-                This is me showing up, working with what I’ve got, and turning doubt into momentum.
-            </p>
-        </div>
-
+        <section class="featured">
+            <span class="section-label">Featured Writing</span>
+            <p class="featured-title">Building for the People in the Waiting Room</p>
+            <p class="featured-description">The story of how childhood hospital visits eventually led me toward biology.</p>
+            <a href="posts/building-for-the-people-in-the-waiting-room.html" class="featured-link">Read the essay &rarr;</a>
+        </section>
+        <section class="featured-publication">
+            <span class="section-label">Featured Publication</span>
+            <p class="featured-title">Insights into the Fucoidan and Mannitol Biosynthetic Pathways in the Brown Seaweed <i>Padina tetrastromatica</i> Based on Draft Genome and Transcriptome Analysis</p>
+            <p class="featured-description">This publication explores the complex biosynthetic pathways of fucoidan and mannitol in the brown seaweed <i>Padina tetrastromatica</i>, utilizing advanced genomic and transcriptomic techniques.</p>
+            <a href="https://link.springer.com/article/10.1007/s10126-026-10649-8" class="featured-link">Read the publication &rarr;</a>
+        </section>
     </div>
-    
+
     <footer class="footer">
-        <p>&copy; 2025 sohamnaik. All rights reserved.</p>
+        <p>&copy; 2026 Soham Naik</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
