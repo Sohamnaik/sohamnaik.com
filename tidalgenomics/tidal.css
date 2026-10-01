@@ -109,7 +109,7 @@ a { color: inherit; }
     box-shadow: var(--shadow); overflow: hidden; background: #fff;
 }
 .banner img { width: 100%; height: auto; }
-.hero-copy { position: relative; max-width: 720px; margin-top: 3rem; }
+.hero-copy { position: relative; margin-top: 3rem; }
 .kicker {
     display: inline-flex; align-items: center; gap: .5rem;
     font-weight: 800; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase;
@@ -310,17 +310,6 @@ h2 {
     padding: .12rem .6rem; border-radius: 999px;
 }
 
-.rhythm { display: flex; gap: 4px; margin-top: .6rem; border: 2.5px solid var(--blue); border-radius: var(--radius); overflow: hidden; background: var(--blue); box-shadow: var(--shadow); }
-.seg { display: flex; flex-direction: column; justify-content: center; padding: .9rem .6rem; text-align: center; min-width: 0; }
-.seg b { font-family: var(--display); font-weight: 400; font-size: 1.9rem; line-height: 1; letter-spacing: .03em; }
-.seg span { font-size: .78rem; font-weight: 800; line-height: 1.2; }
-.s1 { background: var(--blue-soft); color: var(--blue); }
-.s2 { background: var(--blue); color: #fff; }
-.s3 { background: #fff; color: var(--blue); }
-.s4 { background: var(--blue-soft); color: var(--blue); }
-.rhythm-note { text-align: right; font-size: .8rem; color: var(--muted); font-weight: 700; margin-top: .6rem; }
-.support { margin-top: 1.6rem; }
-
 .cert-line {
     display: flex; gap: .6rem; align-items: center; margin-top: 2rem;
     font-weight: 700; color: var(--blue);
@@ -342,6 +331,15 @@ h2 {
 }
 .faq details[open] summary::after { content: "\2212"; }
 .faq details p { padding-bottom: 1.1rem; font-size: .98rem; }
+
+/* ---------- Line-break control ---------- */
+h1, h2, h3, summary { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+.nw, .chips li, .mini-tools span, .tools .tool, .pipeline li, .btn, .skill-n, .brand span { white-space: nowrap; }
+.price { white-space: nowrap; }
+.price small { white-space: normal; }
+.hero-copy .lede { max-width: 40em; }
+.kicker { text-wrap: balance; }
 
 /* ---------- Reveal on scroll ---------- */
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
@@ -369,9 +367,6 @@ h2 {
     .steps4 .panel::after { content: "\2193"; right: auto; left: 50%; top: auto; bottom: -1.3rem; transform: translateX(-50%); }
     .steps4 .panel:nth-child(2)::after { content: "\2193"; }
     .sub-head { font-size: 1.7rem; margin-top: 2.6rem; }
-    .seg { padding: .7rem .2rem; }
-    .seg b { font-size: 1.5rem; }
-    .seg span { font-size: .68rem; }
     .plus-label { width: 100%; }
     .wrap { width: min(1040px, 100% - 2rem); }
     .nav-links a:not(.btn) { display: none; }
