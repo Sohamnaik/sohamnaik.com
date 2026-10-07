@@ -359,9 +359,30 @@ p, li { text-wrap: pretty; }
     .btn, .panel { transition: none; }
 }
 
+/* ---------- Conversion additions ---------- */
+.offer {
+    margin-top: 1.4rem; max-width: 40rem; padding: .9rem 1.2rem;
+    border: 2px solid var(--blue); border-radius: var(--radius); background: var(--blue-soft);
+    font-size: .98rem; line-height: 1.55;
+}
+.offer strong { color: var(--blue); }
+.was { text-decoration: line-through; opacity: .65; font-weight: 700; }
+.price .was { font-size: 2rem; margin-right: .4rem; }
+.cta-note { margin-top: 1rem; max-width: 38rem; font-size: .9rem; color: var(--muted); line-height: 1.5; }
+.founding-why { margin-top: 1rem; }
+.fit { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; margin-top: 2.2rem; }
+.fit ul { list-style: none; display: grid; gap: .5rem; font-size: .96rem; }
+.fit li { position: relative; padding-left: 1.1rem; }
+.fit li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; background: var(--blue); transform: rotate(45deg); }
+.how-steps { list-style: none; padding: 0; }
+.contact-line { margin-top: 1.2rem; font-weight: 700; }
+.creds { list-style: none; margin-top: 1.2rem; display: grid; gap: .3rem; font-weight: 700; font-size: .95rem; }
+.creds li { position: relative; padding-left: 1.1rem; }
+.creds li::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; background: var(--blue); transform: rotate(45deg); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-    .grid-3 { grid-template-columns: 1fr; }
+    .grid-3, .fit { grid-template-columns: 1fr; }
     .steps4 { grid-template-columns: repeat(2, 1fr); }
     .steps4 .panel:nth-child(2)::after { content: none; }
     .plus ul { grid-template-columns: 1fr; }
